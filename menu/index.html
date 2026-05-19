@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Menu — Lighthouse Restaurant</title>
+  <meta name="description" content="Explore the Lighthouse Restaurant menu — signature dishes, seafood, pasta, desserts, cocktails, and more." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+  <div id="pageHero"></div>
+
+  <section class="section" style="text-align:center">
+    <div class="container">
+      <div class="menu-controls">
+        <div class="menu-search">
+          <input type="text" id="menuSearch" placeholder="Search dishes, drinks, vibes..." class="search-input" />
+        </div>
+        <div class="menu-categories" id="menuCategories"></div>
+      </div>
+      <div class="menu-grid" id="menuGrid"></div>
+      <p class="menu-empty" id="menuEmpty" style="display:none">No dishes found matching your search. Try a different keyword!</p>
+    </div>
+  </section>
+
+  <section class="section cta-banner">
+    <div class="container" style="text-align:center">
+      <span class="section-tag">HUNGRY YET?</span>
+      <h2 class="section-title">Book your table and <em>taste the difference</em></h2>
+      <a href="/reservation/" class="btn btn-accent btn-lg">RESERVE NOW <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="/src/menu.ts"></script>
+</body>
+</html>

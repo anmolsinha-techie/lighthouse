@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gallery — Lighthouse Restaurant</title>
+  <meta name="description" content="Explore the ambiance, dishes, and unforgettable moments at Lighthouse Restaurant through our photo gallery." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+  <div id="pageHero"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="gallery-categories" id="galleryCats"></div>
+      <div class="gallery-masonry" id="galleryMasonry"></div>
+    </div>
+  </section>
+
+  <section class="section cta-banner">
+    <div class="container" style="text-align:center">
+      <span class="section-tag">@LIGHTHOUSERESTAURANT</span>
+      <h2 class="section-title">Tagged by you. <em>Loved</em> by us.</h2>
+      <a href="#" class="btn btn-outline btn-lg">FOLLOW ON INSTAGRAM</a>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
+  <div class="toast" id="toast"></div>
+
+  <!-- Lightbox -->
+  <div class="lightbox" id="lightbox">
+    <button class="lightbox-close" id="lightboxClose">✕</button>
+    <button class="lightbox-prev" id="lightboxPrev">‹</button>
+    <button class="lightbox-next" id="lightboxNext">›</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="" />
+    <p class="lightbox-caption" id="lightboxCaption"></p>
+  </div>
+
+  <script type="module" src="/src/gallery.ts"></script>
+</body>
+</html>

@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>About — Lighthouse Restaurant</title>
+  <meta name="description" content="Discover the story behind Lighthouse Restaurant — our journey, values, and the passion that drives every dish." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+  <div id="pageHero"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="about-grid">
+        <div class="about-image fade-in">
+          <img src="/images/restaurant-dining.png" alt="Restaurant dining" loading="lazy" />
+        </div>
+        <div class="about-content fade-in">
+          <h2 class="section-title left">A hideout, by people who needed <em>one too</em></h2>
+          <p class="about-text">Lighthouse Restaurant was born from a simple desire — to create a place where food, warmth, and ambiance converge into something magical. What started as a small family kitchen has grown into the city's most beloved dining destination.</p>
+          <p class="about-text">We didn't want to build another restaurant. We wanted to build a <strong style="color:var(--accent)">pause</strong> — a moment of peace in a busy world, guided by great food and even better company.</p>
+          <p class="about-text">Every ingredient is hand-selected, every recipe refined over years, and every plate presented with the care of someone cooking for family.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section" style="background:var(--bg-secondary)">
+    <div class="container" style="text-align:center">
+      <span class="section-tag">OUR PROMISES</span>
+      <h2 class="section-title">Built around four quiet <em>promises</em></h2>
+      <div class="features-grid" id="promisesGrid"></div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container" style="text-align:center">
+      <span class="section-tag">BY THE NUMBERS</span>
+      <h2 class="section-title">Our journey in <em>numbers</em></h2>
+      <div class="about-stats" style="justify-content:center; gap:60px; margin-top:40px" id="statsRow">
+        <div class="stat fade-in"><span class="stat-number" data-target="12">0</span><span class="stat-label">Years of Excellence</span></div>
+        <div class="stat fade-in"><span class="stat-number" data-target="50">0</span><span class="stat-label">Signature Dishes</span></div>
+        <div class="stat fade-in"><span class="stat-number" data-target="15000">0</span><span class="stat-label">Happy Guests</span></div>
+        <div class="stat fade-in"><span class="stat-number" data-target="25">0</span><span class="stat-label">Team Members</span></div>
+      </div>
+    </div>
+  </section>
+
+  <section class="section">
+    <div class="container">
+      <span class="section-tag">GLIMPSES</span>
+      <h2 class="section-title" style="text-align:center">Inside the <em>Lighthouse</em></h2>
+      <div class="gallery-grid" style="margin-top:40px" id="aboutGallery"></div>
+    </div>
+  </section>
+
+  <section class="section cta-banner">
+    <div class="container" style="text-align:center">
+      <span class="section-tag">COME SAY HELLO</span>
+      <h2 class="section-title">The best stories start with <em>"let's meet at the restaurant"</em></h2>
+      <a href="/reservation/" class="btn btn-accent btn-lg">BOOK A TABLE <span class="btn-arrow">→</span></a>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="/src/about.ts"></script>
+</body>
+</html>

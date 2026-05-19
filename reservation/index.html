@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Reservation — Lighthouse Restaurant</title>
+  <meta name="description" content="Reserve your table at Lighthouse Restaurant. Walk-ins welcome — but reservations guarantee the best experience." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,600;0,700;1,400;1,600&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+</head>
+<body>
+  <nav id="navbar" class="navbar"></nav>
+  <div id="pageHero"></div>
+
+  <section class="section">
+    <div class="container">
+      <div class="reservation-grid">
+        <div class="reservation-form-wrap fade-in">
+          <span class="section-tag">YOUR DETAILS</span>
+          <h2 class="section-title left">Fill in your <em>details</em></h2>
+          <form id="reservationForm" class="reservation-form">
+            <div class="form-row">
+              <div class="form-group"><input type="text" id="resName" placeholder="Full Name" required /></div>
+              <div class="form-group"><input type="tel" id="resPhone" placeholder="Phone Number" required /></div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><input type="email" id="resEmail" placeholder="Email Address" /></div>
+              <div class="form-group">
+                <select id="resGuests" required>
+                  <option value="" disabled selected>Number of Guests</option>
+                  <option value="1">1 Guest</option><option value="2">2 Guests</option>
+                  <option value="3">3 Guests</option><option value="4">4 Guests</option>
+                  <option value="5">5 Guests</option><option value="6">6 Guests</option>
+                  <option value="7">7 Guests</option><option value="8">8+ Guests</option>
+                </select>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group"><input type="date" id="resDate" required /></div>
+              <div class="form-group"><input type="time" id="resTime" required /></div>
+            </div>
+            <div class="form-group">
+              <select id="resOccasion">
+                <option value="" disabled selected>Occasion (Optional)</option>
+                <option value="birthday">Birthday</option><option value="anniversary">Anniversary</option>
+                <option value="date">Date Night</option><option value="business">Business Dinner</option>
+                <option value="celebration">Celebration</option><option value="other">Other</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <textarea id="resNotes" placeholder="Special requests or dietary requirements..." rows="3" style="resize:vertical"></textarea>
+            </div>
+            <button type="submit" class="btn btn-accent btn-lg full-width">RESERVE MY TABLE <span class="btn-arrow">→</span></button>
+          </form>
+        </div>
+        <div class="reservation-info fade-in">
+          <div class="info-card">
+            <span class="section-tag">GOOD TO KNOW</span>
+            <ul class="info-list">
+              <li><span class="info-icon">🕐</span> Open daily 12:00 PM – 11:00 PM</li>
+              <li><span class="info-icon">📋</span> Walk-ins welcome — reservations preferred Fri–Sun</li>
+              <li><span class="info-icon">⏳</span> Tables held for 15 minutes past booking time</li>
+              <li><span class="info-icon">👥</span> Group of 8+? Call us to plan ahead</li>
+              <li><span class="info-icon">🎉</span> Special arrangements available for celebrations</li>
+              <li><span class="info-icon">📞</span> Call us: +91 98765 43210</li>
+            </ul>
+          </div>
+          <div class="info-card" style="margin-top:24px">
+            <span class="section-tag">OPENING HOURS</span>
+            <ul class="info-list">
+              <li><span class="info-icon">📅</span> Monday – Thursday: 12 PM – 10 PM</li>
+              <li><span class="info-icon">🌙</span> Friday – Saturday: 12 PM – 11 PM</li>
+              <li><span class="info-icon">☀️</span> Sunday: 11 AM – 10 PM</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer id="footer" class="footer"></footer>
+  <div class="toast" id="toast"></div>
+  <script type="module" src="/src/reservation.ts"></script>
+</body>
+</html>
